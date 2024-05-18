@@ -24,7 +24,7 @@ def findMedianSortedArrays(nums1, nums2) :
                 if (m + n) % 2 == 0:
                     return (max(nums1_max_left, nums2_max_left) + min(nums1_min_right, nums2_min_right)) / 2.0
                 else:
-                     return max(nums1_max_left, nums2_max_left)
+                    return max(nums1_max_left, nums2_max_left)
             elif nums1_max_left > nums2_min_right:
                 right = partition_nums1 - 1
             else:
